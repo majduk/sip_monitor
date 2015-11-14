@@ -1,0 +1,22 @@
+SITE_NAME="SIP-3-DOMAIN-PVB-1"
+SCENARIO="$CONFIGDIR"/pvb_monitor_guest_access.xml
+USERS_FILE="$CONFIGDIR"/users2.txt
+MESSAGE_FILE=/tmp/monitor_"$SITE_NAME".msg
+ERROR_FILE=/tmp/monitor_"$SITE_NAME".err
+test_time_sec=35
+media_port_base=6000
+local_ip=127.0.0.1
+media_ip=127.0.0.1
+sip_url="127.0.0.1:5160"
+sip_service="790000000"
+calls_no=1
+simultaneus=1
+rate=375
+rp=15s
+rate_increase=0
+recv_timeout=5000
+
+NOW=`date +%Y%m%d%H%M%S`
+
+ALERTTYPES="sms"
+ALERTFILE="$WORKDIR/$SITE_NAME""site.alert"

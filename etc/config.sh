@@ -1,0 +1,14 @@
+#!/bin/sh
+
+VERSION=1.0
+INSTALLDIR=/root/pvb_monitor
+CONFIGDIR="$INSTALLDIR/etc"
+LOGDIR=$INSTALLDIR/log
+LOGFILE=Transact.log
+LOGDATEFORMAT="+[%Y/%m/%d_%H:%M:%S]"
+WORKDIR=$INSTALLDIR/work
+SITELIST=$CONFIGDIR/sitelist.cfg
+ALERTCONFIG=$CONFIGDIR/alertconfig.cfg
+ERRORCONFIG=$CONFIGDIR/sipp_error_config.cfg
+
+
